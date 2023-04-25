@@ -6,3 +6,7 @@
 // countUniqueValues([]) // 0
 // countUniqueValues([-2, -1, -1, 0, 1]) // 4
 
+//** O(n) Solution **//
+function countUniqueValues(arr){
+
+};
