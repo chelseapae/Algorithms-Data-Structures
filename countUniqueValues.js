@@ -37,6 +37,6 @@ function countUniqueValues2(arr){
           arr[i] = arr[j];
       };
   };
-  //return arr.length - arr.indexOf(arr[i]);
+    //return arr.length - arr.indexOf(arr[i]);
     return i + 1;
 };
