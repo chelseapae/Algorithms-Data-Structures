@@ -10,7 +10,7 @@
 function countUniqueValues(arr){
   if (arr.length === 0) {
       return 0;
-  }
+  };
 
   let counter = {};
   for (let i = 0; i < arr.length; i++) {
