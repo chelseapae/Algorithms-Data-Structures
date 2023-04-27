@@ -28,18 +28,20 @@ function maxSubArraySum(arr, num){
 
 //** O(n) Solution **//
 function maxSubArraySum2(arr, num) {
-  let maxSum = 0;
-
   if (arr.length < num) {
-    return null;
+      return null;
   };
+
+  let maxSum = 0;
   for (let i = 0; i < num; i++) {
-    maxSum += arr[i];
+      maxSum += arr[i];
   };
+
   let tempSum = maxSum;
   for (let i = num; i < arr.length; i++) {
-    tempSum = maxSum - arr[i - num] + arr[i];
-    maxSum = Math.max(maxSum, tempSum);
+      tempSum = tempSum - arr[i - num] + arr[i];
+      maxSum = Math.max(tempSum, maxSum)
   }
-  return maxSum;
+
+  return maxSum
 }
