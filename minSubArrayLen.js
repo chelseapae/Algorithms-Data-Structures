@@ -10,3 +10,26 @@
 // minSubArrayLen([1,4,16,22,5,7,8,9,10],55) // 5
 // minSubArrayLen([4, 3, 3, 8, 1, 2, 3], 11) // 2
 // minSubArrayLen([1,4,16,22,5,7,8,9,10],95) // 0
+
+//** O(n) Solution **//
+function minSubArrayLen(nums, sum) {
+  let total = 0;
+  let start = 0;
+  let end = 0;
+  let minLen = Infinity;
+
+  while (start < nums.length) {
+    if(total < sum && end < nums.length){
+      total += nums[end];
+			end++;
+    } else if(total >= sum){
+        minLen = Math.min(minLen, end-start);
+        total -= nums[start];
+        start++;
+    } else {
+        break;
+    }
+  }
+
+  return minLen === Infinity ? 0 : minLen;
+}
