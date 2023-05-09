@@ -4,6 +4,16 @@
 // recursiveRange(6) // 21
 // recursiveRange(10) // 55
 
+//** O(n) Solution **//
 function recursiveRange(num){
+  if (num === 0) {
+      return 0;
+  };
 
-}
+  let sum = 0;
+  while (num > 0) {
+      sum += num;
+      num--;
+  };
+  return sum;
+};
