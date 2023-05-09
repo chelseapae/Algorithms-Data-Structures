@@ -7,3 +7,17 @@
 // factorial(2) // 2
 // factorial(4) // 24
 // factorial(7) // 5040
+
+//** O(n) Solution **//
+function factorial(num){
+  if (num === 0) {
+      return 1;
+  };
+
+   let result = 1;
+   while (num > 0) {
+       result *= num;
+       num--;
+   }
+   return result;
+}
