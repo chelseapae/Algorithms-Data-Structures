@@ -7,6 +7,14 @@
   //[1, 3, 4, 5, 2]
   //[1, 2, 3, 4, 5]
 
-function insertionSort(arr){
+//insertionSort([])
 
+function insertionSort(arr){
+  for (var i = 1; i < arr.length; i++){
+    var currentVal = arr[i];
+    for (var j = i - 1; j >= 0; j--){
+
+    }
+  }
+  return arr;
 }
