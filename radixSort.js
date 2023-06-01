@@ -14,3 +14,7 @@ function getDigit(num, place){
   return Math.floor(Math.abs(num)/Math.pow(10, i)) % 10;
 }
 
+//digitCount(num) - returns the number of digits in num
+//digitCount(1) // 1
+//digitCount(25) // 2
+//digitCount(314) // 3
