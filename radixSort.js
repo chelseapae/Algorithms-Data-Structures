@@ -18,3 +18,14 @@ function getDigit(num, place){
 //digitCount(1) // 1
 //digitCount(25) // 2
 //digitCount(314) // 3
+
+function digitCount(num){
+  let str = num.toString()
+  return str.length;
+}
+
+//Or if you use math
+// function digitCount(num){
+//   if (num === 0) return 1;
+//   return Math.floor(Math.log10(math.abs(num))) + 1;
+// }
