@@ -29,3 +29,8 @@ function digitCount(num){
 //   if (num === 0) return 1;
 //   return Math.floor(Math.log10(math.abs(num))) + 1;
 // }
+
+//mostDigits(nums) - Given an array of numbers, return the number of digits in the largest numbers in the list
+//mostDigits([1234, 56, 7]) //4
+//mostDigits([1, 1, 11111, 1]) //5
+//mostDigits([12, 34 56, 78]) //2
