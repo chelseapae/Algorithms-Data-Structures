@@ -41,4 +41,4 @@ function mostDigits(nums){
     maxDigits = Math.max(maxDigits, digitCount(nums[i]));
   }
   return maxDigits;
-}
+};
