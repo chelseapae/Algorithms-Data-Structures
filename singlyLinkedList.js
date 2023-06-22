@@ -26,5 +26,14 @@ class SinglyLinkedList{
     //returning this returns the whole list;
     return this;
   }
+
+  pop(){
+    if (!head) {
+      return undefined;
+    };
+
+
+
+  }
 }
 
