@@ -28,12 +28,26 @@ class SinglyLinkedList{
   }
 
   pop(){
-    if (!head) {
+    if (!this.head) {
       return undefined;
     };
 
+    var current = this.head;
+    var newTail = current;
 
-
+    while(current.next) {
+      newTail = current;
+      current = current.next;
+    }
+    this.tail = newTail;
+    this.tail.next = null;
+    this.length--;
+    //if there's one item on the list
+    if (this.length === 0) {
+      this.head = null;
+      this.tail = null;
+    }
+    return current;
   }
 }
 
