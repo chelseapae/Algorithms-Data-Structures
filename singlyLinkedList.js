@@ -51,7 +51,14 @@ class SinglyLinkedList{
   }
 
   shift(){
-
+    if (!this.head){
+      return undefined;
+    } else {
+      var currentHead = this.head;
+      this.head = currentHead.next;
+      this.length--;
+      return currentHead;
+    }
   }
 }
 
