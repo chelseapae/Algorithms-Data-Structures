@@ -49,5 +49,9 @@ class SinglyLinkedList{
     }
     return current;
   }
+
+  shift(){
+
+  }
 }
 
