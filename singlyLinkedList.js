@@ -60,5 +60,10 @@ class SinglyLinkedList{
       return currentHead;
     }
   }
+
+  unshift(){
+
+  }
+
 }
 
