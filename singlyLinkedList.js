@@ -95,5 +95,10 @@ class SinglyLinkedList{
     }
     return false;
   }
+
+  //Add a node to a specified index
+  insert(){
+
+  }
 }
 
