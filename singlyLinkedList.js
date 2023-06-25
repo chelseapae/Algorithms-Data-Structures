@@ -86,8 +86,14 @@ class SinglyLinkedList{
     return current;
   }
 
-  set(){
-
+  //changing the value of a node given its position
+  set(index, val){
+    let foundNode = this.get(index);
+    if (foundNode){
+      foundNode.val = val;
+      return true;
+    }
+    return false;
   }
 }
 
