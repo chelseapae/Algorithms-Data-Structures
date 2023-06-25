@@ -74,5 +74,12 @@ class SinglyLinkedList{
     return this;
   }
 
+  //takes in an index and returns the val in that index
+  get(index){
+    if (index < 0 || index >= this.length){
+      return null;
+    }
+
+  }
 }
 
