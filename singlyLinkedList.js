@@ -85,5 +85,9 @@ class SinglyLinkedList{
     }
     return current;
   }
+
+  set(){
+
+  }
 }
 
