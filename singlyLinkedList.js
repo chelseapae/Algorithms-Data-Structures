@@ -138,5 +138,5 @@ class SinglyLinkedList{
     }
     return this;
   }
-}
+};
 
