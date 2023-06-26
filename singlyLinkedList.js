@@ -110,5 +110,10 @@ class SinglyLinkedList{
     this.length++;
     return true;
   }
+
+  //remove a node at a specific index
+  remove(index){
+
+  }
 }
 
