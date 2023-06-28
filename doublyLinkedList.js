@@ -4,6 +4,14 @@ class Node{
     this.next = null;
     this.prev = null;
   }
+}
+
+class DoublyLinkedList{
+  constructor(){
+    this.head = null;
+    this.tail = null;
+    this.length = 0;
+  }
 
   push(val){
     let newNode = new Node(val);
@@ -18,12 +26,8 @@ class Node{
     this.length++;
     return this;
   }
-}
 
-class DoublyLinkedList{
-  constructor(){
-    this.head = null;
-    this.tail = null;
-    this.length = 0;
+  pop(){
+
   }
 }
