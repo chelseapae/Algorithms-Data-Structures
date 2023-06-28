@@ -41,4 +41,9 @@ class DoublyLinkedList{
     this.length--;
     return poppedNode;
   }
+
+  //remove node from beginning
+  shift(){
+
+  }
 }
