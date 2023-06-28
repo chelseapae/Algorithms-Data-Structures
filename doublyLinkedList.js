@@ -4,6 +4,10 @@ class Node{
     this.next = null;
     this.prev = null;
   }
+
+  push(val){
+
+  }
 }
 
 class DoublyLinkedList{
