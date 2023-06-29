@@ -44,6 +44,16 @@ class DoublyLinkedList{
 
   //remove node from beginning
   shift(){
-
+    if (this.length === 0) return undefined;
+    let prevHead = this.head;
+    if (this.length === 1){
+      this.head = null;
+      this.tail = null;
+    }
+    this.head = prevHead.next;
+    this.head.prev = null;
+    prevHead.next = null;
+    this.length--;
+    return prevHead;
   }
 }
