@@ -49,11 +49,17 @@ class DoublyLinkedList{
     if (this.length === 1){
       this.head = null;
       this.tail = null;
+    } else {
+      this.head = prevHead.next;
+      this.head.prev = null;
+      prevHead.next = null;
     }
-    this.head = prevHead.next;
-    this.head.prev = null;
-    prevHead.next = null;
     this.length--;
     return prevHead;
+  }
+
+  //
+  unshift(){
+
   }
 }
