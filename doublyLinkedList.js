@@ -93,4 +93,9 @@ class DoublyLinkedList{
     }
     return current;
   }
+
+  //replace the value of a node
+  set(){
+
+  }
 }
