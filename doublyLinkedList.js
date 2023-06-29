@@ -95,7 +95,13 @@ class DoublyLinkedList{
   }
 
   //replace the value of a node
-  set(){
-
+  set(val, index){
+    let foundNode = this.get(index)
+    if (foundNode !== null){
+      foundNode.val = val;
+      return true;
+    } else {
+      return false;
+    }
   }
 }
