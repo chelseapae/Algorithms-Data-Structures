@@ -72,4 +72,10 @@ class DoublyLinkedList{
     this.length++;
     return this;
   }
+
+  //access a node and returns it
+  get(){
+
+  }
+
 }
