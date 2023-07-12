@@ -79,14 +79,14 @@ class DoublyLinkedList{
     if(index <= this.length/2) {
       var count = 0;
       var current = this.head;
-      while(count != index){
+      while(count !== index){
         current = current.next;
         count++;
       }
     } else {
       var count = this.length - 1;
       var current = this.tail;
-      while(count != index){
+      while(count !== index){
         current = current.prev;
         count--;
       }
