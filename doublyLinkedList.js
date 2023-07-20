@@ -5,7 +5,6 @@ class Node{
     this.prev = null;
   }
 }
-
 class DoublyLinkedList{
   constructor(){
     this.head = null;
@@ -95,14 +94,13 @@ class DoublyLinkedList{
   }
 
   //replace the value of a node
-  set(val, index){
-    let foundNode = this.get(index)
-    if (foundNode !== null){
+  set(index, val){
+    var foundNode = this.get(index)
+    if (foundNode != null){
       foundNode.val = val;
       return true;
-    } else {
-      return false;
     }
+      return false;
   }
 
   //Add a node in a certain position
