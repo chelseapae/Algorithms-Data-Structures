@@ -39,4 +39,4 @@ class Queue {
     this.size--
     return temp.value;
   }
-}
+};
