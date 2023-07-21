@@ -32,7 +32,6 @@ class Queue {
     if(!this.first) return null;
     var temp = this.first;
     if (this.first === this.last){
-      this.first = null;
       this.last = null;
     }
     this.first = this.first.next;
