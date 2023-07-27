@@ -39,8 +39,20 @@ class BinarySearchTree {
     }
   }
 
-  find(){
+  find(value){
+    if (this.root === null) return false;
+    var current = this.root;
 
+    while(current && !found){
+      if(value < current.value){
+        current = current.left;
+      } else if(value > current.value){
+        current = current.right;
+      } else {
+        return true;
+      }
+    }
+    return false;
   }
 }
 
