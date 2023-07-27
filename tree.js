@@ -38,5 +38,9 @@ class BinarySearchTree {
         }
     }
   }
+
+  find(){
+
+  }
 }
 
