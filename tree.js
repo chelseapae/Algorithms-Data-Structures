@@ -55,5 +55,5 @@ class BinarySearchTree {
     }
     return false;
   }
-}
+};
 
