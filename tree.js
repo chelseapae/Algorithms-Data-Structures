@@ -56,7 +56,7 @@ class BinarySearchTree {
     return false;
   }
 
-  BreadthFirstSearch(){
+  breadthFirstSearch(){
     var data = [];
     var queue = [];
     var node = this.root;
@@ -70,5 +70,10 @@ class BinarySearchTree {
     }
     return data;
   }
+
+  depthFirstSearch(){
+
+  }
+
 };
 
