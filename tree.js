@@ -55,5 +55,9 @@ class BinarySearchTree {
     }
     return false;
   }
+
+  BreadthFirstSearch(){
+
+  }
 };
 
