@@ -106,7 +106,6 @@ class BinarySearchTree {
   //depth in order (traverse entire left, then right, root last)
   DFSInOrder(){
     var data = [];
-    var current = this.root;
 
     function traverse(node){
       if(node.left) traverse(node.left);
@@ -114,8 +113,7 @@ class BinarySearchTree {
       if(node.right) traverse(node.right);
     }
 
-    traverse(current);
+    traverse(this.root);
     return data;
   }
 };
-
