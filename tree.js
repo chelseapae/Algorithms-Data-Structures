@@ -71,12 +71,13 @@ class BinarySearchTree {
     return data;
   }
 
-  //depth first search pre-order
+  //depth first search pre-order (visit everything left as a cluster, then right)
   DFSPreOrder(){
     var data = [];
     var current = this.root;
 
     function traverse(node){
+      //data.push(node.value) -> same thing, just easier to see values
       data.push(node);
       if(node.left) traverse(node.left);
       if(node.right) traverse(node.right);
@@ -86,5 +87,20 @@ class BinarySearchTree {
     return data;
   }
 
+  //depth first search post-order (visit bottom up, left to right. Root is the last visited)
+  DFSPostOrder(){
+    var data = [];
+    var current = this.root;
+
+    function traverse(node){
+      //data.push(node.value) -> same thing, just easier to see values
+      if(node.left) traverse(node.left);
+      if(node.right) traverse(node.right);
+      data.push(node);
+    }
+
+    traverse(current);
+    return data;
+  }
 };
 
